@@ -45,7 +45,7 @@ if(config.descco_pipeline){
     }
     const imageConfig = {};
   
-    config.descco_pipeline.imagemin = Object.assign(imageminDefaults, imageConfig, config.asset_pipeline.imagemin || {});
+    config.descco_pipeline.imagemin = Object.assign(imageminDefaults, imageConfig, config.descco_pipeline.imagemin || {});
   
     hexo.extend.filter.register('after_generate', filters.image);
   

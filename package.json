@@ -1,0 +1,55 @@
+{
+  "name": "hexo-descco-pipeline",
+  "version": "0.1.0",
+  "description": "Hexo pipeline",
+  "main": "index",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/descco-headquarters/hexo-descco-pipeline.git"
+  },
+  "keywords": [
+    "hexo",
+    "hexo-plugin",
+    "css",
+    "image",
+    "html",
+    "minify"
+  ],
+  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/descco-headquarters/hexo-descco-pipeline/issues"
+  },
+  "homepage": "https://github.com/descco-headquarters/hexo-descco-pipeline#readme",
+  "dependencies": {
+    "bluebird": "3.5.0",
+    "hasha": "3.0.0",
+    "hexo-util": "0.6.2",
+    "html-minifier": "3.5.6",
+    "imagemin": "5.3.1",
+    "imagemin-gifsicle": "5.2.0",
+    "imagemin-jpegtran": "5.0.2",
+    "imagemin-mozjpeg": "6.0.0",
+    "imagemin-optipng": "5.2.1",
+    "imagemin-pngquant": "5.0.1",
+    "imagemin-svgo": "6.0.0",
+    "minimatch": "3.0.4",
+    "rev-path": "2.0.0",
+    "soup": "0.1.5",
+    "stream-to-array": "2.3.0",
+    "node-sass": "4.5.3",
+    "node-sass-magic-importer": "5.0.0-alpha.14",
+    "keyword-extractor": "0.0.14",
+    "moment": "2.19.1",
+    "lodash": "4.13.1",
+    "memory-fs": "0.3.0",
+    "uglifyjs-webpack-plugin": "1.0.1",
+    "webpack": "2.7.0"
+  }
+}

@@ -29,7 +29,7 @@ if(config.descco_pipeline){
       exclude: []
     }
   
-    config.descco_pipeline.html_minifier = Object.assign(htmlMinifierDefaults, htmlConfig, config.asset_pipeline.html_minifier || {});
+    config.descco_pipeline.html_minifier = Object.assign(htmlMinifierDefaults, htmlConfig, config.descco_pipeline.html_minifier || {});
   
     hexo.extend.filter.register('after_render:html', filters.html);
   

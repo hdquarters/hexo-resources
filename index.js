@@ -122,23 +122,23 @@ if(config.descco_pipeline){
      * Search config.
      */
     var configSearch = hexo.config.search = merge({
-      path: 'search.xml',
+      path: 'search.json',
       field: 'post'
     }, hexo.config.descco_pipeline.search);
     
     // Set default search path
     if (!configSearch.path){
-      configSearch.path = 'search.xml';
+      configSearch.path = 'search.json';
     }
     
     // Add extension name if don't have
-    if (!pathFn.extname(configSearch.path)){
-      configSearch.path += '.xml';
-    }
+    // if (!pathFn.extname(configSearch.path)){
+    //   configSearch.path += '.xml';
+    // }
     
-    if (pathFn.extname(configSearch.path)=='.xml') {
-      hexo.extend.generator.register('xml', generators.search.xml);
-    }
+    // if (pathFn.extname(configSearch.path)=='.xml') {
+    //   hexo.extend.generator.register('xml', generators.search.xml);
+    // }
     
     if (pathFn.extname(configSearch.path)=='.json') {
       hexo.extend.generator.register('json', generators.search.json);

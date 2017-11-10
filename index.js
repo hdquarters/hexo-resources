@@ -97,13 +97,13 @@ if(config.descco_pipeline){
       autolink: true
     }, hexo.config.descco_pipeline.marked);
     
-    hexo.extend.renderer.register('md', 'html', renderer, true);
-    hexo.extend.renderer.register('markdown', 'html', renderer, true);
-    hexo.extend.renderer.register('mkd', 'html', renderer, true);
-    hexo.extend.renderer.register('mkdn', 'html', renderer, true);
-    hexo.extend.renderer.register('mdwn', 'html', renderer, true);
-    hexo.extend.renderer.register('mdtxt', 'html', renderer, true);
-    hexo.extend.renderer.register('mdtext', 'html', renderer, true);
+    hexo.extend.renderer.register('md', 'html', renderer.marked, true);
+    hexo.extend.renderer.register('markdown', 'html', renderer.marked, true);
+    hexo.extend.renderer.register('mkd', 'html', renderer.marked, true);
+    hexo.extend.renderer.register('mkdn', 'html', renderer.marked, true);
+    hexo.extend.renderer.register('mdwn', 'html', renderer.marked, true);
+    hexo.extend.renderer.register('mdtxt', 'html', renderer.marked, true);
+    hexo.extend.renderer.register('mdtext', 'html', renderer.marked, true);
 
     /**
      * Sitemap config.

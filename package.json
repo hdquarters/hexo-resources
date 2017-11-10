@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "eslint": "eslint ."
+    "lint": "node_modules/.bin/eslint ./"
   },
   "repository": {
     "type": "git",

@@ -112,7 +112,7 @@ if(config.descco_pipeline){
       path: 'sitemap.xml'
     }, hexo.config.descco_pipeline.sitemap);
     
-    if (!pathFn.extname(config.path)) {
+    if (!pathFn.extname(configSitemap.path)) {
       configSitemap.path += '.xml';
     }
     

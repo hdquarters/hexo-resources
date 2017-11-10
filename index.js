@@ -36,18 +36,18 @@ if(config.descco_pipeline){
     /**
      * Image config.
      */
-    const imageminDefaults = {
-      interlaced: false,
-      multipass: false,
-      optimizationLevel: 3,
-      pngquant: false,
-      progressive: false
-    }
-    const imageConfig = {};
+    // const imageminDefaults = {
+    //   interlaced: false,
+    //   multipass: false,
+    //   optimizationLevel: 3,
+    //   pngquant: false,
+    //   progressive: false
+    // }
+    // const imageConfig = {};
   
-    config.descco_pipeline.imagemin = Object.assign(imageminDefaults, imageConfig, config.descco_pipeline.imagemin || {});
+    // config.descco_pipeline.imagemin = Object.assign(imageminDefaults, imageConfig, config.descco_pipeline.imagemin || {});
   
-    hexo.extend.filter.register('after_generate', filters.image);
+    // hexo.extend.filter.register('after_generate', filters.image);
   
     /**
      * Sass config.
@@ -66,9 +66,14 @@ if(config.descco_pipeline){
     hexo.extend.tag.register('codepen', tags.codepen);
 
     /**
-     * JsonContent config.
+     * jsonFeed config.
      */
-    hexo.extend.generator.register('json-content', generators.jsonContent);
+    const jsonFeedDefaults = {};
+    const jsonFeedConfig = {};
+
+    config.descco_pipeline.jsonFeed = Object.assign(jsonFeedDefaults, jsonFeedConfig, config.descco_pipeline.jsonFeed || {});
+
+    hexo.extend.generator.register('json-feed', generators.jsonFeed);
 
     /**
      * Hook to enable revisioning.

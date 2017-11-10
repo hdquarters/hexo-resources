@@ -62,7 +62,7 @@
     "uglifyjs-webpack-plugin": "1.0.1",
     "webpack": "2.7.0",
     "ejs": "2.5.7",
-    "ejs-old": "git+https://github.com/tj/ejs.git",
+    "ejs-old": "ejs#1.0.0",
     "object-assign": "4.0.1",
     "marked": "0.3.5",
     "strip-indent": "1.0.1",

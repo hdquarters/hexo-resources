@@ -54,12 +54,20 @@ if(config.descco_pipeline){
     /**
      * Sass config.
      */
+    const nodeSassDefaults = {}
+    const nodeSassConfig = {};
+
+    config.descco_pipeline.node_sass = Object.assign(nodeSassDefaults, nodeSassConfig, config.descco_pipeline.node_sass || {});
     hexo.extend.renderer.register('scss', 'css', renderer.sass);
     hexo.extend.renderer.register('sass', 'css', renderer.sass);
 
     /**
      * Webpack config.
      */
+    const webpackDefaults = {}
+    const webpackConfig = {};
+
+    config.descco_pipeline.webpack = Object.assign(webpackDefaults, webpackConfig, config.descco_pipeline.webpack || {});
     hexo.extend.renderer.register('js', 'js', renderer.webpack);
 
     /**

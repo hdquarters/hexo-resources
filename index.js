@@ -5,6 +5,9 @@ const renderer = require('./lib/renderer');
 const generators = require('./lib/generators');
 const tags = require('./lib/tags');
 const revision = require('./lib/revision');
+const assign = require('object-assign');
+const pathFn = require('path');
+const merge = require('utils-merge');
 const config = hexo.config;
 
 /**
@@ -75,6 +78,125 @@ if(config.descco_pipeline){
     hexo.extend.generator.register('json-feed', generators.jsonFeed);
 
     /**
+     * ejs config.
+     */
+    hexo.extend.renderer.register('ejs', 'html', renderer.ejs, true);
+
+    /**
+     * Marked config.
+     */
+    hexo.config.marked = assign({
+      gfm: true,
+      pedantic: false,
+      sanitize: false,
+      tables: true,
+      breaks: true,
+      smartLists: true,
+      smartypants: true,
+      modifyAnchors: '',
+      autolink: true
+    }, hexo.config.descco_pipeline.marked);
+    
+    hexo.extend.renderer.register('md', 'html', renderer, true);
+    hexo.extend.renderer.register('markdown', 'html', renderer, true);
+    hexo.extend.renderer.register('mkd', 'html', renderer, true);
+    hexo.extend.renderer.register('mkdn', 'html', renderer, true);
+    hexo.extend.renderer.register('mdwn', 'html', renderer, true);
+    hexo.extend.renderer.register('mdtxt', 'html', renderer, true);
+    hexo.extend.renderer.register('mdtext', 'html', renderer, true);
+
+    /**
+     * Sitemap config.
+     */
+    var configSitemap = hexo.config.sitemap = assign({
+      path: 'sitemap.xml'
+    }, hexo.config.descco_pipeline.sitemap);
+    
+    if (!pathFn.extname(config.path)) {
+      configSitemap.path += '.xml';
+    }
+    
+    hexo.extend.generator.register('sitemap', generators.sitemap);
+
+    /**
+     * Search config.
+     */
+    var configSearch = hexo.config.search = merge({
+      path: 'search.xml',
+      field: 'post'
+    }, hexo.config.descco_pipeline.search);
+    
+    // Set default search path
+    if (!configSearch.path){
+      configSearch.path = 'search.xml';
+    }
+    
+    // Add extension name if don't have
+    if (!pathFn.extname(configSearch.path)){
+      configSearch.path += '.xml';
+    }
+    
+    if (pathFn.extname(configSearch.path)=='.xml') {
+      hexo.extend.generator.register('xml', generators.search.xml);
+    }
+    
+    if (pathFn.extname(configSearch.path)=='.json') {
+      hexo.extend.generator.register('json', generators.search.json);
+    }
+
+    /**
+     * Feed config.
+     */
+    var configFeed = hexo.config.feed = assign({
+      type: 'atom',
+      limit: 20,
+      hub: '',
+      content: true,
+      content_limit: 140,
+      content_limit_delim: ''
+    }, hexo.config.descco_pipeline.feed);
+    
+    var type = configFeed.type.toLowerCase();
+    
+    // Check feed type
+    if (type !== 'atom' && type !== 'rss2') {
+      configFeed.type = 'atom';
+    } else {
+      configFeed.type = type;
+    }
+    
+    // Set default feed path
+    if (!configFeed.path) {
+      configFeed.path = configFeed.type + '.xml';
+    }
+    
+    // Add extension name if don't have
+    if (!pathFn.extname(configFeed.path)) {
+      configFeed.path += '.xml';
+    }
+    
+    hexo.extend.generator.register('feed', generators.feed);
+
+    /**
+     * Index config.
+     */
+    hexo.config.index_generator = assign({
+      per_page: typeof hexo.config.per_page === 'undefined' ? 10 : hexo.config.per_page,
+      order_by: '-date'
+    }, hexo.config.index_generator);
+    
+    hexo.extend.generator.register('index', generators.index);
+
+    /**
+     * Category config.
+     */
+    hexo.config.category_generator = assign({
+      per_page: typeof hexo.config.per_page === 'undefined' ? 10 : hexo.config.per_page
+    }, hexo.config.category_generator);
+    
+    hexo.extend.generator.register('category', generators.category);
+
+    /**
      * Hook to enable revisioning.
      */
     const revisioningDefaults = {
@@ -107,3 +229,4 @@ if(config.descco_pipeline){
       }
     });
   }
+  

@@ -126,3 +126,12 @@ revisioning:
 ```
 
 #### Note: To match paths in `exclude` option, glob matching is done using [minmatch](https://github.com/isaacs/minimatch).
+
+
+## Observation
+
+imagemin (Mac OS)
+
+```
+brew install libpng
+```

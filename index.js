@@ -36,18 +36,17 @@ if(config.descco_pipeline){
     /**
      * Image config.
      */
-    // const imageminDefaults = {
-    //   interlaced: false,
-    //   multipass: false,
-    //   optimizationLevel: 3,
-    //   pngquant: false,
-    //   progressive: false
-    // }
-    // const imageConfig = {};
+    const imageminDefaults = {
+      interlaced: false,
+      multipass: false,
+      optimizationLevel: 3,
+      pngquant: false,
+      progressive: false
+    }
+    const imageConfig = {};
   
-    // config.descco_pipeline.imagemin = Object.assign(imageminDefaults, imageConfig, config.descco_pipeline.imagemin || {});
-  
-    // hexo.extend.filter.register('after_generate', filters.image);
+    config.descco_pipeline.imagemin = Object.assign(imageminDefaults, imageConfig, config.descco_pipeline.imagemin || {});
+    hexo.extend.filter.register('after_generate', filters.image);
   
     /**
      * Sass config.

@@ -16,9 +16,6 @@
   "hexo": {
     "version": "3.4.0"
   },
-  "engines": {
-    "hexo": "3.4.0"
-  },
   "keywords": [
     "hexo",
     "hexo-plugin",
@@ -38,9 +35,9 @@
     "eslint-config-hexo": "1.0.2"
   },
   "dependencies": {
-    "@babel/preset-env": "7.0.0-beta.31",
-    "babel-core": "6.26.0",
-    "babel-loader": "7.1.2",
+    "@babel/core": "7.0.0-beta.32",
+    "@babel/preset-env": "7.0.0-beta.32",
+    "babel-loader": "^8.0.0-beta.0",
     "bluebird": "3.5.0",
     "ejs": "2.5.7",
     "hasha": "3.0.0",
@@ -61,8 +58,8 @@
     "memory-fs": "0.3.0",
     "minimatch": "3.0.4",
     "moment": "2.19.1",
-    "node-sass": "4.6.0",
-    "node-sass-magic-importer": "5.0.0-alpha.17",
+    "node-sass": "^4.6.1",
+    "node-sass-magic-importer": "^5.0.0-alpha.17",
     "nunjucks": "2.3.0",
     "object-assign": "4.0.1",
     "rev-path": "2.0.0",

@@ -1,5 +1,5 @@
 {
-  "name": "hexo-descco-pipeline",
+  "name": "@descco/hexo-resources",
   "version": "0.1.0",
   "description": "Hexo pipeline",
   "main": "index",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/descco-headquarters/hexo-descco-pipeline.git"
+    "url": "git+https://github.com/descco-headquarters/hexo-resources.git"
   },
   "hexo": {
     "version": "3.4.0"
@@ -27,9 +27,9 @@
   "author": "Hemerson Vianna <hemerson.lourenco@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/descco-headquarters/hexo-descco-pipeline/issues"
+    "url": "https://github.com/descco-headquarters/hexo-resources/issues"
   },
-  "homepage": "https://github.com/descco-headquarters/hexo-descco-pipeline#readme",
+  "homepage": "https://github.com/descco-headquarters/hexo-resources#readme",
   "devDependencies": {
     "eslint": "4.11.0",
     "eslint-config-hexo": "2.0.0"

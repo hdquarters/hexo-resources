@@ -1,4 +1,4 @@
-# hexo-descco-pipeline
+# Hexo resources
 
 Pipeline for [Hexo](https://hexo.io/).
 - Hexo 3.x.x

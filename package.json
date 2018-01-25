@@ -30,13 +30,18 @@
     "url": "https://github.com/descco-headquarters/hexo-resources/issues"
   },
   "homepage": "https://github.com/descco-headquarters/hexo-resources#readme",
+  "peerDependencies": {
+    "@babel/core": "^7.0.0-beta.38",
+    "@babel/preset-env": "^7.0.0-beta.38",
+    "babel-loader": "8.0.0-beta.0"
+  },
   "devDependencies": {
     "eslint": "4.11.0",
     "eslint-config-hexo": "2.0.0"
   },
   "dependencies": {
-    "@babel/core": "7.0.0-beta.32",
-    "@babel/preset-env": "7.0.0-beta.32",
+    "@babel/core": "^7.0.0-beta.38",
+    "@babel/preset-env": "^7.0.0-beta.38",
     "babel-loader": "8.0.0-beta.0",
     "bluebird": "3.5.1",
     "ejs": "2.5.7",

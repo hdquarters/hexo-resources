@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "lint": "node_modules/.bin/eslint ./"
+    "lint": "node_modules/.bin/eslint ./",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -67,6 +68,7 @@
     "node-sass-magic-importer": "5.0.0-alpha.17",
     "nunjucks": "3.0.1",
     "object-assign": "4.1.1",
+    "release-it": "^6.1.1",
     "rev-path": "2.0.0",
     "soup": "0.1.5",
     "stream-to-array": "2.3.0",

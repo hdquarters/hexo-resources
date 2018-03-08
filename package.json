@@ -63,7 +63,7 @@
     "marked": "0.3.9",
     "memory-fs": "0.3.0",
     "minimatch": "3.0.4",
-    "moment": "2.19.1",
+    "moment": "2.19.3",
     "node-sass": "4.6.1",
     "node-sass-magic-importer": "5.0.0-alpha.17",
     "nunjucks": "3.0.1",

@@ -9,7 +9,7 @@
 ![GitHub All Releases](https://img.shields.io/github/downloads//org-descco/hexo-resources/total.svg)
 
 Pipeline for [Hexo](https://hexo.io/).
-- Hexo 3.x.x
+- Hexo 4.x.x
 
 ## Configuration
 Add the following snippet in `_config.yml`.

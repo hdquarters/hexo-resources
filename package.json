@@ -74,6 +74,8 @@
     "stream-to-array": "2.3.0",
     "strip-indent": "3.0.0",
     "uglifyjs-webpack-plugin": "2.2.0",
+    "url": "0.11.0",
+    "util": "0.12.2",
     "utils-merge": "1.0.1",
     "webpack": "4.41.6"
   }

@@ -1,6 +1,6 @@
 {
   "name": "@descco/hexo-resources",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Hexo pipeline",
   "main": "index",
   "directories": {

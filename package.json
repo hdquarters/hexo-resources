@@ -1,5 +1,5 @@
 {
-  "name": "@descco/hexo-resources",
+  "name": "@hdquarters/hexo-resources",
   "version": "1.8.0",
   "description": "Hexo pipeline",
   "main": "index",
@@ -8,14 +8,14 @@
   },
   "scripts": {
     "lint": "./node_modules/.bin/eslint ./",
-    "release": "./node_modules/.bin/release-it --no-npm.publish"
+    "release": "./node_modules/.bin/release-it --no-npm.publish --git.tagName='v${version}' --github.release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/descco-headquarters/hexo-resources.git"
+    "url": "git+https://github.com/hdquarters/hexo-resources.git"
   },
   "hexo": {
-    "version": "3.4.0"
+    "version": "4.2.0"
   },
   "keywords": [
     "hexo",
@@ -25,12 +25,12 @@
     "html",
     "minify"
   ],
-  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com>",
+  "author": "Hemerson Vianna <hemerson.lourenco@gmail.com> (https://nerdcalistenico.com.br)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/descco-headquarters/hexo-resources/issues"
+    "url": "https://github.com/hdquarters/hexo-resources/issues"
   },
-  "homepage": "https://github.com/descco-headquarters/hexo-resources#readme",
+  "homepage": "https://github.com/hdquarters/hexo-resources#readme",
   "peerDependencies": {
     "@babel/core": "7.5.5",
     "@babel/preset-env": "7.5.5",
@@ -78,5 +78,8 @@
     "util": "0.12.2",
     "utils-merge": "1.0.1",
     "webpack": "4.41.6"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }

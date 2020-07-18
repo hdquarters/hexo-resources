@@ -1,12 +1,14 @@
 # Hexo resources
 
 [![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://hemersonvianna.mit-license.org/)
-[![GitHub issues](https://img.shields.io/github/issues//hdquarters/hexo-resources.svg)](https://github.com//hdquarters/hexo-resources/issues)
-![GitHub package.json version](https://img.shields.io/github/package-json/v//hdquarters/hexo-resources.svg)
-![GitHub Release Date](https://img.shields.io/github/release-date//hdquarters/hexo-resources.svg)
-![GitHub top language](https://img.shields.io/github/languages/top//hdquarters/hexo-resources.svg)
-![GitHub repo size](https://img.shields.io/github/repo-size//hdquarters/hexo-resources.svg)
-![GitHub All Releases](https://img.shields.io/github/downloads//hdquarters/hexo-resources/total.svg)
+[![GitHub issues](https://img.shields.io/github/issues/hdquarters/hexo-resources.svg)](https://github.com/hdquarters/hexo-resources/issues)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/hdquarters/hexo-resources.svg)
+![GitHub Release Date](https://img.shields.io/github/release-date/hdquarters/hexo-resources.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/hdquarters/hexo-resources.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/hdquarters/hexo-resources.svg)
+![GitHub All Releases](https://img.shields.io/github/downloads/hdquarters/hexo-resources/total.svg)
+
+Hexo Pipeline
 
 Pipeline for [Hexo](https://hexo.io/).
 - Hexo 4.x.x

@@ -1,6 +1,6 @@
 {
   "name": "@hdquarters/hexo-resources",
-  "version": "1.8.0",
+  "version": "2.0.0",
   "description": "Hexo pipeline",
   "main": "index",
   "directories": {

@@ -31,11 +31,6 @@
     "url": "https://github.com/hdquarters/hexo-resources/issues"
   },
   "homepage": "https://github.com/hdquarters/hexo-resources#readme",
-  "peerDependencies": {
-    "@babel/core": "7.5.5",
-    "@babel/preset-env": "7.5.5",
-    "babel-loader": "8.0.6"
-  },
   "devDependencies": {
     "eslint": "6.8.0",
     "eslint-config-hexo": "4.1.0"
